@@ -1,5 +1,5 @@
 import struct #used only to pack to bytes object and unpack to integer
-
+# used information from this site https://blog.boot.dev/cryptography/how-sha-2-works-step-by-step-sha-256/
 
 def hash(text):
     K = [
