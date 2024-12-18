@@ -169,7 +169,6 @@ class Blockchain:
             if current_block.merkle_root != MerkleTree(current_block.transactions).get_merkle_root():
                 return False
 
-        print("Blockchain is valid")
         return True
 
     def print_chain(self):
@@ -198,4 +197,6 @@ for transaction in transactions:
     blockchain.add_block(transactions)
 
 blockchain.print_chain()
-blockchain.validate_blockchain()
+
+if blockchain.validate_blockchain():
+    print("Blockchain is valid")
