@@ -80,11 +80,6 @@ def hash(text):
         hash_result += format(value, '08x')
     return hash_result
 
-
-if __name__ == "__main__":
-    text = "sup"
-    print(hash(text))
-
 #///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////#
 
 class Transaction:
