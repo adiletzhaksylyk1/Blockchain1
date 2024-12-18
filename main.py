@@ -58,7 +58,7 @@ def hash(text):
             c = b
             b = a
             a = (temp1 + temp2) & 0xFFFFFFFF
-
+            
         hashValues[0] = (hashValues[0] + a) & 0xFFFFFFFF
         hashValues[1] = (hashValues[1] + b) & 0xFFFFFFFF
         hashValues[2] = (hashValues[2] + c) & 0xFFFFFFFF
